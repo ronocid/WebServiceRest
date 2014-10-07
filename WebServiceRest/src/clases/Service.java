@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 @Path("InfoService") //esta ruta indica la clase a la que se accedera
 public class Service {
 
-	@GET 	//se indica el tipo del metedo que determina como se recibe la informacion en este caso es get
+	@GET 	//se indica el tipo del metodo que determina como se recibe la informacion en este caso es get
 	@Path("/saludo/name={nombre}")	//la ruta que se indica para llamar al metodo y la estructura para mandar los parametros
 	@Produces(MediaType.TEXT_XML)
 	public String saludo (@PathParam("nombre") String nombre){
